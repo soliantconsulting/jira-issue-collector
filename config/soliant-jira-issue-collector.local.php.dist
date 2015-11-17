@@ -1,0 +1,73 @@
+<?php
+return [
+    'soliant-jira-issue-collector' => [
+        /**
+         * Enables or disables the collector.
+         *
+         * Expects: bool
+         * Default: true
+         */
+        'enabled'       => true,
+
+        /**
+         * Settings taken from a specific Jira Issue Collector
+         */
+        'collector'     => [
+            /**
+             * If your project will already provide jQuery set this to true.
+             *
+             * Expects: bool
+             * Default: false
+             */
+            'useJquery' => false,
+
+            /**
+             * Mandatory url for the Jira Issue Collector.
+             *
+             * Expects: string
+             */
+            'url'       => "",
+        ],
+
+        /**
+         * Requires that jQuery is available! When useJquery is true, and clickSelector is not null, the module will
+         * add the javascript triggerFunction provided by Jira a Issue Collector when configured for Custom trigger.
+         *
+         * Expects: null|string
+         * Default: null
+         */
+        // 'clickSelector' => 'myCustomTrigger',
+
+        /**
+         * For advanced usage, you may want to implement your own view script(s). Copy the starter scripts from
+         * the module at view/soliant-jira-issue-collector/snippet into your own template_path_stack stack with a
+         * unique path, such as the examples provided below.
+         */
+        'templatePath'  => [
+            /**
+             * Provides the basic script tag to be injected right before the closing body tag.
+             *
+             * Expects: string
+             * Default: 'soliant-jira-issue-collector/snippet/script.phtml'
+             */
+            // 'script' => 'application/soliant-jira-issue-collector/snippet/script.phtml',
+
+            /**
+             * Optional div tag can be injected into the body right before the basic script tag so that you can
+             * implement a custom button implementation.
+             *
+             * Expects: null|string
+             * Default: null
+             */
+            // 'div'    => 'application/soliant-jira-issue-collector/snippet/div.phtml',
+
+            /**
+             * Optional style tag can be injected into the head tag so that you can implement custom css.
+             *
+             * Expects: null|string
+             * Default: null
+             */
+            // 'css'    => 'application/soliant-jira-issue-collector/snippet/style.phtml',
+        ],
+    ],
+];

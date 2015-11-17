@@ -1,0 +1,51 @@
+{
+    "name": "soliantconsulting/jira-issue-collector",
+    "description": "Module for injecting Jira issue collector into layout.",
+    "type": "zf-module",
+    "license": "MIT",
+    "keywords": [
+        "Jira",
+        "qa",
+        "developer",
+        "zf2",
+        "module"
+    ],
+    "homepage": "https://github.com/soliantconsulting/jira-issue-collector",
+    "authors": [
+        {
+            "name": "Jeremiah Small",
+            "email": "jsmall@soliantconsulting.com"
+        }
+    ],
+    "require": {
+        "php":                               ">=5.5",
+        "zendframework/zend-mvc":            "2.*",
+        "zendframework/zend-eventmanager":   "2.*",
+        "zendframework/zend-stdlib":         "2.*",
+        "zendframework/zend-servicemanager": "2.*",
+        "zendframework/zend-modulemanager":  "2.*",
+        "zendframework/zend-version":        "2.*",
+        "zendframework/zend-view":           "2.*",
+        "zendframework/zend-http":           "2.*"
+    },
+    "require-dev": {
+        "zendframework/zend-debug":          "2.*",
+        "phpunit/phpunit":                   "~5",
+        "phpunit/phpunit-skeleton-generator": "*",
+        "mockery/mockery":                    "~0.9.4",
+        "squizlabs/php_codesniffer":          "2.*",
+        "codeclimate/php-test-reporter":      "~0.2.0"
+    },
+    "suggest": {
+    },
+    "autoload": {
+        "psr-0": {
+            "Soliant\\JiraIssueCollector": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-0": {
+            "Soliant\\JiraIssueCollectorTest": "tests/"
+        }
+    }
+}

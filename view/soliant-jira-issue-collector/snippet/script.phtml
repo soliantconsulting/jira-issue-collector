@@ -1,0 +1,24 @@
+<!-- START Soliant Jira Issue Collector -->
+<?php if ($this->useJquery): ?>
+<script type="text/javascript">
+    jQuery.ajax({
+        url: "<?php echo $this->url; ?>",
+        type: "get",
+        cache: true,
+        dataType: "script"
+    });
+    <?php if ($this->clickSelector): ?>
+    window.ATL_JQ_PAGE_PROPS = {
+        "triggerFunction": function(showCollectorDialog) {
+            jQuery("#<?php echo $this->clickSelector; ?>").click(function(e) {
+                e.preventDefault();
+                showCollectorDialog();
+            });
+        }
+    };
+    <?php endif; ?>
+</script>
+<?php else: ?>
+<script type="text/javascript" src="<?php echo $this->url; ?>"></script>
+<?php endif; ?>
+<!-- END Soliant Jira Issue Collector -->
