@@ -38,7 +38,7 @@ class Options extends AbstractOptions
         if (isset($collector['useJquery'])) {
             $this->useJquery = (bool)$collector['useJquery'];
         }
-        if (isset($collector['url'])) {
+        if (isset($collector['url']) && !empty($collector['url'])) {
             $this->url = $collector['url'];
         } else {
             throw new InvalidOptionException(
