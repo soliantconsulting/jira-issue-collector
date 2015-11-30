@@ -62,8 +62,7 @@ module.exports = function(grunt) {
                 if (property === 'options') {
                     continue;
                 }
-
-                phpunitConfig[property].coverageClover = 'build/logs/clover-' + property + '.xml';
+                phpunitConfig[property].coverageClover = 'build/logs/clover.xml';
             }
 
             grunt.config.set('phpunit', phpunitConfig)

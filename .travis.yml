@@ -1,17 +1,24 @@
 language: php
 
-php:
-  - 5.5
-  - 5.6
-  - 7
+matrix:
+  fast_finish: true
+  include:
+    - php: 5.5
+    - php: 5.6
+    - php: 7
+    - php: hhvm
+  allow_failures:
+    - php: 7
+    - php: hhvm
 
-before_install:
- - composer self-update
- - composer install --prefer-source
+before_script:
+  - composer self-update
+  - composer install --prefer-source
+  - npm install -g grunt-cli
+  - npm install
 
 script:
-  - ./vendor/bin/phpunit
+  - grunt test:ci
 
-matrix:
-  allow_failures:
-    - php: 7.0
+after_script:
+  - CODECLIMATE_REPO_TOKEN=c7d5f85ff76227ff40a6b95a22ed290fbacd30b537806d44b8e5f267e6b43e66 vendor/bin/test-reporter
