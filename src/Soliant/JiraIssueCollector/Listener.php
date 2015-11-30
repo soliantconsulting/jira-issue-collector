@@ -9,7 +9,6 @@
 
 namespace Soliant\JiraIssueCollector;
 
-use Zend\Debug\Debug;
 use Zend\EventManager\EventManagerInterface;
 use Zend\EventManager\ListenerAggregateInterface;
 use Zend\Mvc\MvcEvent;

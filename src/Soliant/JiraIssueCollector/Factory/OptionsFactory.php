@@ -10,7 +10,6 @@
 namespace Soliant\JiraIssueCollector\Factory;
 
 use Soliant\JiraIssueCollector\Options;
-use Zend\Debug\Debug;
 use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
 

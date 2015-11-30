@@ -1,0 +1,25 @@
+{
+    "name": "soliantconsulting-jira-issue-collector",
+    "version": "1.0.0",
+    "description": "soliantconsulting-jira-issue-collector is a ZF2 module that injects an issue collector via config.",
+    "main": "Gruntfile.js",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/soliantconsulting/jira-issue-collector.git"
+    },
+    "keywords": [
+        "Jira", "Issue Collector"
+    ],
+    "author": "Jeremiah Small",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/soliantconsulting/jira-issue-collector/issues"
+    },
+    "devDependencies": {
+        "grunt": "~0.4",
+        "grunt-phpcs": "*",
+        "grunt-phplint": "*",
+        "grunt-phpunit": "*",
+        "grunt-mkdir": "*"
+    }
+}

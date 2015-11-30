@@ -1,6 +1,6 @@
 {
     "name": "soliantconsulting/jira-issue-collector",
-    "description": "Module for injecting Jira issue collector into layout.",
+    "description": "A Zend Framework Module for injecting a Jira issue collector into the Zend\\Mvc response body.",
     "type": "zf-module",
     "license": "MIT",
     "keywords": [
@@ -19,22 +19,22 @@
     ],
     "require": {
         "php":                               ">=5.5",
-        "zendframework/zend-mvc":            "2.*",
-        "zendframework/zend-eventmanager":   "2.*",
-        "zendframework/zend-stdlib":         "2.*",
-        "zendframework/zend-servicemanager": "2.*",
-        "zendframework/zend-modulemanager":  "2.*",
-        "zendframework/zend-version":        "2.*",
-        "zendframework/zend-view":           "2.*",
-        "zendframework/zend-http":           "2.*"
+        "zendframework/zend-mvc":            "^2",
+        "zendframework/zend-eventmanager":   "^2",
+        "zendframework/zend-stdlib":         "^2",
+        "zendframework/zend-servicemanager": "^2",
+        "zendframework/zend-modulemanager":  "^2",
+        "zendframework/zend-version":        "^2",
+        "zendframework/zend-view":           "^2",
+        "zendframework/zend-http":           "^2"
     },
     "require-dev": {
-        "zendframework/zend-debug":          "2.*",
-        "phpunit/phpunit":                   "~5",
-        "phpunit/phpunit-skeleton-generator": "*",
-        "mockery/mockery":                    "~0.9.4",
-        "squizlabs/php_codesniffer":          "2.*",
-        "codeclimate/php-test-reporter":      "~0.2.0"
+        "zendframework/zend-debug":          "^2.5",
+        "phpunit/phpunit":                   "^4",
+        "phpunit/phpunit-skeleton-generator": "^2",
+        "mockery/mockery":                    "^0.9",
+        "squizlabs/php_codesniffer":          "^2",
+        "codeclimate/php-test-reporter":      "^0.2"
     },
     "suggest": {
     },
